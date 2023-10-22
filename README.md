@@ -16,7 +16,7 @@
 
 ## Сборка под linux
 
-Сначало нужно устаноить **Boost, Nlohmann** библиотека для С++ для работы с файлами.
+Сначало нужно устаноить **Boost, Nlohmann и <https://github.com/vugsk/COC>, <https://github.com/vugsk/RWFC>** библиотека для С++ для работы с файлами.
 Прописать  терминале или просто нажать на файл st.sh
 
     sh start.sh
