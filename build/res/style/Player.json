@@ -1,0 +1,12 @@
+{
+    "BasePlayer": {
+        "hp": 100,
+        "dmg": 10,
+        "strong": 2,
+        "mp": 0,
+        "power": 1,
+        "protection": 0,
+        "lvl": 0,
+        "exp": 0
+    }
+}

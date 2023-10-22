@@ -1,0 +1,30 @@
+{
+    "screen": {
+        "width": 150,
+        "height": 30
+    },
+    
+    "lang": {
+        "default": "locales/RU",
+        "config_lang": "locales/setting"
+    },
+
+    "keyboard": {
+        "wale": {
+            "up": 100,
+            "down": 101,
+            "left": 98,
+            "right": 99
+        }
+    },
+    
+    "Resources": {
+        "music": {
+            "menu": "res/music/menu"
+        },
+    
+        "style": {
+            "mobs": "res/style"
+        }
+    }
+}

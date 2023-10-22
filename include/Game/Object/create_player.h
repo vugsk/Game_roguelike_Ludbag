@@ -6,7 +6,7 @@
 #include "IPlayer.h"
 
 // #include <CWT/create_win.h>
-#include <RWF/SettingNameTestFile.h>
+// #include <RWF/SettingNameTestFile.h>
 
 
 class CreatePlayer {
@@ -20,8 +20,8 @@ private:
 
     CreatePlayer(IPlayer*& player);
 
-    SettingNameClass SNC;
-    RIniFile *RIF;
+    // SettingNameClass SNC;
+    // RIniFile *RIF;
     // CreateWin* win;
 
     int _errorNumber;

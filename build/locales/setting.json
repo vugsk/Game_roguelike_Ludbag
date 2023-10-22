@@ -1,0 +1,36 @@
+
+{
+    
+    "list_config": [
+        "Build.ini",
+        "Error.ini",
+        "Interface.ini", 
+        "Mob.ini", 
+        "Player.ini", 
+        "Subject.ini"
+    ],
+
+    "interface": {
+        "StartMenuGame": {
+            "textTitle": {
+                "Width": 20,
+                "height": 5
+            }
+        }
+    },
+
+    "subject": {
+        "viewSubject": [
+
+        ],
+
+        "viewCombat": [
+            "closeСombat",
+            "rangedСombat"
+        ],
+        "nameCloseCombat": [
+            "sword",
+            "knife"
+        ]
+    }
+}

@@ -3,8 +3,8 @@
 #ifndef _IPLAYER_H_
 #define _IPLAYER_H_
 
-#include <SDC/system.h>
-#include <Object/Items/IItem.h>
+#include <Engine/system.h>
+#include "IItem.h"
 
 class IPlayer_V2_TEST {
 public:
@@ -44,15 +44,15 @@ public:
     virtual int getPower() = 0;
     
     virtual IItem* getItems(const int index) = 0;
-    virtual vector<IItem*> getItems() = 0;
+    // virtual vector<IItem*> getItems() = 0;
     
-    virtual IItem* getInventory(const int index1, const int index2) = 0;
-    virtual vector<IItem*> getInventory(const int index) = 0;
-    virtual vector<vector<IItem*>> getInventory() = 0;
+    // virtual IItem* getInventory(const int index1, const int index2) = 0;
+    // virtual vector<IItem*> getInventory(const int index) = 0;
+    // virtual vector<vector<IItem*>> getInventory() = 0;
     
 
-    virtual void setItems(vector<IItem*> items) = 0;
-    virtual void setInventory(vector<vector<IItem*>> inventory) = 0;
+    // virtual void setItems(vector<IItem*> items) = 0;
+    // virtual void setInventory(vector<vector<IItem*>> inventory) = 0;
 
 };
 
@@ -67,8 +67,8 @@ public:
 
     virtual void addInventory(IItem *item) = 0;
 
-    virtual void move(const int choice, const vector_str map) = 0;
-    virtual void spawn(const vector_str map) = 0;
+    // virtual void move(const int choice, const vector_str map) = 0;
+    // virtual void spawn(const vector_str map) = 0;
     virtual int createPlayer(IPlayer *&player) = 0;
     virtual int menuPlayer(IPlayer *&player) = 0;
 };

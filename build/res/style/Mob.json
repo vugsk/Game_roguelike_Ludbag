@@ -1,0 +1,43 @@
+
+{
+    "Mobs": {
+        "MobsLowLvl": {
+            "hp": [20, 25, 65, 15],
+            "dmg": [5, 3, 5, 2],
+            "lvl": [0, 0, 0, 0],
+            "review": [2, 2, 5, 2],
+            "location": {
+                "S": [0, 1],
+                "R": [0, 2],
+                "W": [0, 2],
+                "M": [0, 1]
+            },
+            "friedlich": [
+                false,
+                true,
+                false,
+                true
+            ]
+        },
+        "MobsUpLvl": {
+            "hp": [75, 100, 50],
+            "dmg": [10, 15, 5],
+            "lvl": [0, 1, 0],
+            "review": [4, 9, 5],
+            "intelligence": [0, 1, 1],
+            "protect": [3, 8, 0],
+            "mp": [0, 20, 0],
+            "location": {
+                "B": [2],
+                "D": [1, 2],
+                "G": [0, 1, 2]
+            },
+            "friedlich": [
+                false,
+                false,
+                false
+            ]
+        }
+    }
+
+}

@@ -1,4 +1,4 @@
 
-#include "IItem.h"
+#include "Game/Object/IItem.h"
 
 IItem::~IItem() {}

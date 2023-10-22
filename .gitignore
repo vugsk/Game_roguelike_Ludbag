@@ -1,0 +1,53 @@
+# ---> C++
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+/test
+/test2
+/test3
+
+Makefile
+
+.cache
+.vscode
+Docs
+
+build/.cmake
+build/CMakeFiles
+build/CWT
+build/.ninja_deps
+build/.ninja_log
+build/build.ninja
+build/cmake_install.cmake
+build/CMakeCache.txt
+build/compile_commands.json
+build/Game
+
+
+

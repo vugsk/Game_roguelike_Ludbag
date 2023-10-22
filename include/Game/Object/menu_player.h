@@ -5,7 +5,7 @@
 
 #include "IPlayer.h"
 
-#include <RWF/SettingNameTestFile.h>
+// #include <RWF/SettingNameTestFile.h>
 // #include <CWT/create_win.h>
 
 namespace {
@@ -20,8 +20,8 @@ namespace {
         Specifications();
         ~Specifications();
         
-        vector_str textSpecifications;
-        vector_str textItemPlayer;   
+        // vector_str textSpecifications;
+        // vector_str textItemPlayer;   
         
         // CreateWin*       win;
         IPlayer_V2_TEST* player;
@@ -44,15 +44,15 @@ namespace {
         ~Inventory();
 
         string     titleWinInventory;
-        vector_str textMenuRL;
-        vector_str textMenuPieces;
-        vector_str textInfoWeapon;
-        vector_str textInfoArmor;
+        // vector_str textMenuRL;
+        // vector_str textMenuPieces;
+        // vector_str textInfoWeapon;
+        // vector_str textInfoArmor;
 
         // CreateWin* win;
 
-        vector<vector<IItem*>> inventory;
-        vector<IItem*>         items;
+        // vector<vector<IItem*>> inventory;
+        // vector<IItem*>         items;
 
         void init();
         void informationItem(IItem* item);

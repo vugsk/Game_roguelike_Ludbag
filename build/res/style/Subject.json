@@ -1,0 +1,35 @@
+
+
+{
+    "Weapon": {
+        "closeСombat": {
+            "sword": {
+                "Dmg": [5, 22],
+                "Penetration": [0, 17],
+                "Weight": [700, 4200],
+                "Rare": [0, 1, 2]
+            }, 
+            "knife": {
+                
+            }
+        },
+
+        "rangedСombat": {
+            "nameWeaponsDistant": [
+                "bow",
+                "crossbow",
+                "pistol"
+            ],
+            "bow": {
+
+            },
+            "crossbow": {
+
+            },
+            "pistol": {
+
+            }
+
+        }
+    }
+}

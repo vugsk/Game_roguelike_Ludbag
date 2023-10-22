@@ -1,5 +1,5 @@
 
-#include "item.h"
+#include "Game/Object/item.h"
 
 
 string Item::getView() { 

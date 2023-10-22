@@ -1,5 +1,5 @@
 
-#include "menu_player.h"
+#include "Game/Object/menu_player.h"
 
 
 MenuPlayer* MenuPlayer::pointerInstance = nullptr;
@@ -41,11 +41,11 @@ void Specifications::init() {
 }
 
 Specifications::Specifications() {
-    SettingNameClass SNC;
-    RIniFile RIF(SNC.getPathFile("Player", false));
+    // SettingNameClass SNC;
+    // RIniFile RIF(SNC.getPathFile("Player", false));
 
-    textSpecifications    = RIF.readVectorStr("VectorTextSpecifications");;
-    textItemPlayer        = RIF.readVectorStr("VectorTextItemPlayer");;
+    // textSpecifications    = RIF.readVectorStr("VectorTextSpecifications");;
+    // textItemPlayer        = RIF.readVectorStr("VectorTextItemPlayer");;
 
 }
 
@@ -180,14 +180,14 @@ void Inventory::init() {
 }
 
 Inventory::Inventory() {
-    SettingNameClass SNC;
-    RIniFile RIF(SNC.getPathFile("Player", false));
+    // SettingNameClass SNC;
+    // RIniFile RIF(SNC.getPathFile("Player", false));
     
-    titleWinInventory = RIF.readStr("VectorTextMenuRL.title");
-    textMenuRL        = RIF.readVectorStr("VectorTextMenuRL");
-    textMenuPieces    = RIF.readVectorStr("VectorTextMenuPieces");
-    textInfoWeapon    = RIF.readVectorStr("VectorTextInfoWeapon");
-    textInfoArmor     = RIF.readVectorStr("VectorTextInfoArmor");
+    // titleWinInventory = RIF.readStr("VectorTextMenuRL.title");
+    // textMenuRL        = RIF.readVectorStr("VectorTextMenuRL");
+    // textMenuPieces    = RIF.readVectorStr("VectorTextMenuPieces");
+    // textInfoWeapon    = RIF.readVectorStr("VectorTextInfoWeapon");
+    // textInfoArmor     = RIF.readVectorStr("VectorTextInfoArmor");
 
 }
 
@@ -208,10 +208,10 @@ Inventory::~Inventory() {}
 void MenuPlayer::init(IPlayer *&player) {
     // win = new CreateWin(X_MENU, Y_MENU, X_BEGIN_MENU, Y_BEGIN_MENU);
 
-    SettingNameClass SNC;
-    RIniFile RIF(SNC.getPathFile("Player", false));
+    // SettingNameClass SNC;
+    // RIniFile RIF(SNC.getPathFile("Player", false));
     
-    const vector_str text_menu_player = RIF.readVectorStr("VectorTextMenuPlayer");
+    // const vector_str text_menu_player = RIF.readVectorStr("VectorTextMenuPlayer");
 
     // do {
     //     win->textSelection(text_menu_player, text_menu_player.size(), (win->getY() / 2) - 3);

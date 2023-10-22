@@ -1,5 +1,5 @@
 
-#include "create_player.h"
+#include "Game/Object/create_player.h"
 
 CreatePlayer* CreatePlayer::pointerInstance = nullptr;
 
@@ -15,10 +15,10 @@ string CreatePlayer::createName() {
     // win->clearWin(21, 1, win->getX()-1, win->getY()-1);
     // echo();
 
-    string textName = RIF->readStr("CreateMenu.textName");
-    string textInputName = RIF->readStr("CreateMenu.textInputName");
-    string errorNameNotInput = RIF->readStr("ErrorInputName.errorNameNotInput");
-    string errorNameNotLenght = RIF->readStr("ErrorInputName.errorNameNotLenght");
+    // string textName = RIF->readStr("CreateMenu.textName");
+    // string textInputName = RIF->readStr("CreateMenu.textInputName");
+    // string errorNameNotInput = RIF->readStr("ErrorInputName.errorNameNotInput");
+    // string errorNameNotLenght = RIF->readStr("ErrorInputName.errorNameNotLenght");
 
 
     do {
@@ -69,15 +69,15 @@ string CreatePlayer::createName() {
 }
 
 string CreatePlayer::createClassGenderSpeices(int num) {
-    vector_str vector;
+    // vector_str vector;
 
-    if (num == 1) {
-        vector = RIF->readVectorStr("VectorGenderMF");
-    } else if (num == 2) {
-        vector = RIF->readVectorStr("VectorSpecies");
-    } else if (num == 3) {
-        vector = RIF->readVectorStr("VectorClass");
-    }
+    // if (num == 1) {
+    //     vector = RIF->readVectorStr("VectorGenderMF");
+    // } else if (num == 2) {
+    //     vector = RIF->readVectorStr("VectorSpecies");
+    // } else if (num == 3) {
+    //     vector = RIF->readVectorStr("VectorClass");
+    // }
 
     // win->clearWin(21, 1, win->getX()-1, win->getY()-1);
 
@@ -151,23 +151,23 @@ CreatePlayer* CreatePlayer::getInstance(IPlayer*& player) {
 CreatePlayer::CreatePlayer(IPlayer*& player) { 
     winCreatePlayer(player); 
 
-    RWJsonFile *RWJF = new RWJsonFile(SNC.getPathFile("Player"));
+    // RWJsonFile *RWJF = new RWJsonFile(SNC.getPathFile("Player"));
 
-    player->setHp(RWJF->readInt("BasePlayer.hp"));
-    player->setDmg(RWJF->readInt("BasePlayer.dmg"));
-    player->setMP(RWJF->readInt("BasePlayer.mp"));
-    player->setLvl(RWJF->readInt("BasePlayer.lvl"));
-    player->setExp(RWJF->readInt("BasePlayer.exp"));
-    player->setProtection(RWJF->readInt("BasePlayer.protection"));
-    player->setPower(RWJF->readInt("BasePlayer.power"));
-    player->setTitle("No data");
-    player->setStrong(RWJF->readInt("BasePlayer.strong"));
+    // player->setHp(RWJF->readInt("BasePlayer.hp"));
+    // player->setDmg(RWJF->readInt("BasePlayer.dmg"));
+    // player->setMP(RWJF->readInt("BasePlayer.mp"));
+    // player->setLvl(RWJF->readInt("BasePlayer.lvl"));
+    // player->setExp(RWJF->readInt("BasePlayer.exp"));
+    // player->setProtection(RWJF->readInt("BasePlayer.protection"));
+    // player->setPower(RWJF->readInt("BasePlayer.power"));
+    // player->setTitle("No data");
+    // player->setStrong(RWJF->readInt("BasePlayer.strong"));
 
-    delete RWJF;
+    // delete RWJF;
 }
 
 CreatePlayer::~CreatePlayer() { 
     // delete win; 
-    delete RIF; 
+    // delete RIF; 
 }
 

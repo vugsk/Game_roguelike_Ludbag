@@ -3,7 +3,7 @@
 #ifndef _ARMOR_H_
 #define _ARMOR_H_
 
-#include <SDC/system.h>
+#include <Engine/system.h>
 
 
 struct Armor {

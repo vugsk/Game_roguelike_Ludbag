@@ -6,7 +6,7 @@
 #include "IPlayer.h"
 #include "menu_player.h"
 
-#include <Object/unit_exists.h>
+#include "unit_exists.h"
 
 
 class Player : public IPlayer {
@@ -25,8 +25,8 @@ private:
     int mp;
     int protection;
 
-    vector<IItem*> items;
-    vector<vector<IItem*>> inventory;
+    // vector<IItem*> items;
+    // vector<vector<IItem*>> inventory;
 
     MenuPlayer* menuPl;
 
@@ -39,15 +39,15 @@ public:
 
     static Player* getInstance();
 
-    IItem* getItems(const int index) override { return items[index]; }
-    vector<IItem*> getItems() override { return items; }
+    // IItem* getItems(const int index) override { return items[index]; }
+    // vector<IItem*> getItems() override { return items; }
     
-    IItem* getInventory(const int index1, const int index2) override { return inventory[index1][index2]; }
-    vector<IItem*> getInventory(const int index) override { return inventory[index]; }
-    vector<vector<IItem*>> getInventory() override { return inventory; }
+    // IItem* getInventory(const int index1, const int index2) override { return inventory[index1][index2]; }
+    // vector<IItem*> getInventory(const int index) override { return inventory[index]; }
+    // vector<vector<IItem*>> getInventory() override { return inventory; }
 
-    void setItems(vector<IItem*> items) override { this->items = items; }
-    void setInventory(vector<vector<IItem*>> inventory) override { this->inventory = inventory; }
+    // void setItems(vector<IItem*> items) override { this->items = items; }
+    // void setInventory(vector<vector<IItem*>> inventory) override { this->inventory = inventory; }
 
     void addInventory(IItem* item) override;
 
@@ -81,10 +81,10 @@ public:
     int getPower() override { return unit.power; }
 
 
-    void move(const int choice, const vector_str map) override;
-    void spawn(const vector_str map) override;
-    int createPlayer(IPlayer *&player) override;
-    int menuPlayer(IPlayer *&player) override;
+    // void move(const int choice, const vector_str map) override;
+    // void spawn(const vector_str map) override;
+    // int createPlayer(IPlayer *&player) override;
+    // int menuPlayer(IPlayer *&player) override;
 
 };
 

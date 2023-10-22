@@ -4,7 +4,7 @@
 #define _MAP_GAME_H_
 
 // #include <CWT/system_CWT.h>
-#include <SDC/system.h>
+#include <Engine/system.h>
 
 class Map {
 private:
@@ -12,7 +12,7 @@ private:
 
     Map();
 
-    vector_str mapField;
+    // vector_str mapField;
 
     void field();
     void dungeon();
@@ -26,7 +26,7 @@ public:
 
     static Map *getInit();
 
-    vector_str getPlayingField() { return mapField; }    
+    // vector_str getPlayingField() { return mapField; }    
 
     void checkLocation(const int location);
 

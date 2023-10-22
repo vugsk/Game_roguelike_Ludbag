@@ -1,7 +1,5 @@
 
 #pragma once
-#ifndef _ISUBJECT_H_
-#define _ISUBJECT_H_
 
 #include "IObserver.h"
 
@@ -14,4 +12,3 @@ public:
     virtual void Notify() = 0;
 };
 
-#endif
