@@ -3,7 +3,8 @@
 
 #include <ParserJsonFile.h>
 
-string test(string name_config) {
+string test(const char* name_config)
+{
     ParserJsonFile PJF;
     
     vector<string> list;
@@ -14,7 +15,8 @@ string test(string name_config) {
     PJF.read(SYS_CONFIG, "config_lang", lang_config);
     PJF.read(lang_config, "list_config", list);
     
-    for (const auto& t: list) {
+    for (const auto& t: list)
+    {
         if (t == name_config) lang_menu += "/" + t;
     }
 
